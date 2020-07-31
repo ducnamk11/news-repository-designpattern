@@ -1,0 +1,80 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+.home-nav {
+    background-color: white;
+    -webkit-box-shadow: 3px 13px 28px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 13px 28px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 13px 28px -22px rgba(0, 0, 0, 0.75);
+
+}
+
+span.detail {
+    font-size: 18px;
+}
+
+.search {
+    width: 10px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search:focus {
+    width: 100%;
+}
+
+.nav-menu {
+    color: #796b6b;
+
+}
+
+.first-image {
+    height: 250px;
+    width: 450px;
+}
+.new-image{
+    height: 150px;
+    width: 250px;
+}
+
+.link-a {
+    color: black;
+}
+
+.link-a:hover {
+    text-decoration: none;
+}
+
+.category {
+    color: #6b6b6b;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+
+.category-number {
+    padding-right: 30px;
+
+    font-size: 34px;
+    color: rgba(0, 0, 0, .15);
+    font-family: 'Anton', sans-serif;
+
+}
+.detail-title{
+
+}
+.author-detail{
+    height: 80px;
+    border: 1px solid red;
+    padding:3px;
+}
