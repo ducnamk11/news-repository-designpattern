@@ -1,9 +1,10 @@
 @extends('layouts.home')
 @section('content')
+
     <div class="col-md-9 p-3  ">
         <div class="row">
             <div class=" col-md-8 p-2">
-                <img class="first-image" src="{{url('images/'.$featurest->image)}}" alt="helláoá">
+                <img class="first-image" src="{{url('images/'.$featurest->image)}}" alt="image">
                 <h2><a class="link-a"
                        href="{{URL::route('post.detail',[ 'id'=>$featurest->id])}}">{{$featurest->title}}</a></h2>
                 <h6><a class="link-a"
@@ -24,15 +25,6 @@
         </div>
     </div>
     <div class="col-md-3 p-3 border-left-5">
-        <h3>Hot New</h3>
-        <hr class="cm-hr">
-        @foreach($categories as $c)
-            <h3><a class="link-a" href="">
-                    <span class="category-number">{{$loop->iteration}} </span>
-                    <span class="category">{{$c->name}}</a></span>
-            </h3>
-        @endforeach
-
         <h3>Chuyên mục</h3>
         <hr class="cm-hr">
         @foreach($categories as $c)

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Repository\Category\CategoryRepository;
 use App\Repository\Post\PostRepository;
 use App\Repository\User\UserRepository;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -26,7 +27,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home.index', [
+         return view('home.index', [
             'featurest' => $this->postRepository->featurest(),
             'new' => $this->postRepository->new()->take(8),
             'posts' => $this->postRepository->getAll()->take(4),

@@ -22,8 +22,8 @@
    <span>
         <a href="{{URL::route('home')}}" class="navbar-brand font-weight-bold">M</a>
         </span>
-    <form class="form-inline">
-        <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <form class="form-inline" action="{{route('post.search')}}" method="get">
+        <input required name="search" class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     </form>
 </nav>
 <div class="container ">

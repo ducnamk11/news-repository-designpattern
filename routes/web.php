@@ -18,6 +18,7 @@ Auth::routes();
 //Route::get('/{id}/{slug}', 'HomeController@show')->name('post.detail');
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/detail/{id}', 'HomeController@show')->name('post.detail');
+Route::get('/search', 'PostController@search')->name('post.search');
 
 Route::prefix('admin')->group(function () {
     Route::resource('category', 'CategoryController');

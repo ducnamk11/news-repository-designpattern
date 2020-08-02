@@ -75,6 +75,15 @@ span.detail {
 }
 .author-detail{
     height: 80px;
-    border: 1px solid red;
     padding:3px;
+}
+.author-avt{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.author-name{
+
+    font-size: 15px;
+    border-radius: 50%;
 }

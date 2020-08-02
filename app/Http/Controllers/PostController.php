@@ -122,4 +122,15 @@ class PostController extends Controller
         return redirect('admin/post')->with('success', 'Deleted post');
 
     }
+
+    public function search()
+    {
+        $search = \request()->get('search');
+//        dd($this->postRepository->search($search));
+        return view('home.search', [
+            'searchs' => $this->postRepository->search($search),
+
+        ]);
+    }
+
 }
